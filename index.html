@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Calculadora</title>
+  </head>
+  <body onload="encenderApagar()">
+    <h1>Calculadora con JavaScript</h1>
+
+    <div id="calculadora">
+        <input type="button" id="onOff" value="on" onclick="encenderApagar()">
+        <input type="text" class="btn" id="display" readonly>
+        <input type="button" class="btn" id="uno" value="1" onclick="ingresarDato(1)">
+        <input type="button" class="btn" id="dos" value="2" onclick="ingresarDato(2)">
+        <input type="button" class="btn" id="tres" value="3" onclick="ingresarDato(3)">
+        <input type="button" class="btn" id="cuatro" value="4" onclick="ingresarDato(4)">
+        <input type="button" class="btn" id="cinco" value="5" onclick="ingresarDato(5)">
+        <input type="button" class="btn" id="seis" value="6" onclick="ingresarDato(6)">
+        <input type="button" class="btn" id="siete" value="7" onclick="ingresarDato(7)">
+        <input type="button" class="btn" id="ocho" value="8" onclick="ingresarDato(8)">
+        <input type="button" class="btn" id="nueve" value="9" onclick="ingresarDato(9)">
+        <input type="button" class="btn" id="cero" value="0" onclick="ingresarDato(0)">
+        <input type="button" class="btn" id="suma" value="+" onclick="ingresarOperador('+')">
+        <input type="button" class="btn" id="resta" value="-" onclick="ingresarOperador('-')">
+        <input type="button" class="btn" id="multiplicacion" value="*" onclick="ingresarOperador('*')">
+        <input type="button" class="btn" id="division" value="/" onclick="ingresarOperador('/')">
+        <input type="button" class="btn" id="igual" value="=" onclick="calcular()">
+        <input type="button" class="btn" id="punto" value="." onclick="ingresarOperador('.')">
+        <input type="button" class="btn" id="borrar" value="C" onclick="borrar()">
+        <input type="button" class="btn" id="parentesisAbrir" value="&#40" onclick="ingresarOperador('&#40')">
+        <input type="button" class="btn" id="parentesisCerrar" value="&#41" onclick="ingresarOperador('&#41')">
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+  <script src="./src/js/index.js"></script>
+</html>

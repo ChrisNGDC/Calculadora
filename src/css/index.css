@@ -1,0 +1,141 @@
+h1 {
+    text-align: center;
+}
+
+#calculadora {
+    display: grid;
+    grid-template-columns: repeat(4 25%);
+    grid-template-rows: repeat(7 1fr);
+    grid-template-areas:
+        '0 0 0 onOff'
+        'display display display display'
+        'division multiplicacion resta borrar'
+        'siete ocho nueve parentesis'
+        'cuatro cinco seis suma'
+        'uno dos tres suma'
+        'punto cero igual suma';
+    width: 300px;
+    margin: 5% auto;
+    border: solid 1px;
+    padding: 1%;
+    background-color: #333;
+    border-radius: 2%;
+}
+
+.btn,
+#onOff {
+    margin-top: 4%;
+    width: 70px;
+    height: 40px;
+    background-color: wheat;
+    font-weight: bold;
+}
+
+#onOff {
+    grid-area: onOff;
+    margin-left: 25%;
+    width: 50px;
+    height: 20px;
+    border-radius: 40%;
+    font-size: x-small;
+}
+
+.btn:hover {
+    background-color: lightsalmon;
+}
+
+#display {
+    grid-area: display;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    height: 2rem;
+    padding: 1%;
+    text-align: right;
+    font-size: x-large;
+    background-color: gray;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#uno {
+    grid-area: uno;
+}
+
+#dos {
+    grid-area: dos;
+}
+
+#tres {
+    grid-area: tres;
+}
+
+#cuatro {
+    grid-area: cuatro;
+}
+
+#cinco {
+    grid-area: cinco;
+}
+
+#seis {
+    grid-area: seis;
+}
+
+#siete {
+    grid-area: siete;
+}
+
+#ocho {
+    grid-area: ocho;
+}
+
+#nueve {
+    grid-area: nueve;
+}
+
+#cero {
+    grid-area: cero;
+}
+
+#suma {
+    grid-area: suma;
+    height: 98%;
+}
+
+#resta {
+    grid-area: resta;
+}
+
+#multiplicacion {
+    grid-area: multiplicacion;
+}
+
+#division {
+    grid-area: division;
+}
+
+#punto {
+    grid-area: punto;
+}
+
+#igual {
+    grid-area: igual;
+}
+
+#borrar {
+    grid-area: borrar;
+    background-color: rgb(255, 34, 0);
+    color: white;
+}
+
+#parentesisAbrir {
+    grid-area: parentesis;
+    width: 35px;
+}
+
+#parentesisCerrar {
+    grid-area: parentesis;
+    width: 35px;
+    margin-left: 35px;
+}
